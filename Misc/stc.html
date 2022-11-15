@@ -24,15 +24,15 @@
       }
       .button_show {
         height: 40px;
-      border-radius: 15px;
-      border: solid #190291 2.3px;
+      border-radius: 22px;
+      border: solid #190291 2px;
   color: #190291;
-  padding: 8px 14px;
+  padding: 9px 14px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 6px 2px;
       }
     body{
       font-family: "Montserrat", sans-serif;
@@ -45,9 +45,7 @@
     .text_black{
       color: black;
     }
-    .text_nav_inactive{
 
-    }
     .text_bot_name{
       color: #190291;
       text-shadow: 0.2px 0 #190291;
@@ -94,20 +92,22 @@ font-weight:bold;
       color: #96989D;
 
     }
-    #button_show_USD{
-      display: inline-block;
-      background-color: white;
-      height: 35px;
-      border-radius: 26px;
+    .button_filter {
+        height: 40px;
+        min-width: 220px;
+      border-radius: 22px;
       border: solid black 1px;
   color: #190291;
-  padding: 5px 10px;
+  font-weight: 600;
+  padding: 9px 8px 9px 48px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
-    }
+  margin: 6px 2px;
+ 
+      }
+  
     #button_filter{
       display: inline-block;
       background-color: white;
@@ -117,6 +117,7 @@ font-weight:bold;
   color: #190291;
   padding: 5px 10px 5px 40px;
   text-align: center;
+  font-weight: 700;
   vertical-align: middle;
   text-decoration: none;
   font-size: 16px;
@@ -196,21 +197,19 @@ li {
       <p  style="margin: 0px;  font-size: 18px;     text-shadow: 0.2px 0;
       letter-spacing:0.2px; padding-top: 25px;
       font-weight:bold;"><strong>LIST OF TRADING TOOL BOT</strong></p>
-      <p style="margin: 0px;">Amount of the earnings: &nbsp; <span class="button_show">Show in USD&nbsp;<img style="width:19px;"src="stc_src/refresh.png"></span>
+      <p style="margin: 0px; font-weight: 500;">Amount of the earnings: &nbsp; <span class="button_show">Show in USD&nbsp;<img style="width:19px;"src="stc_src/refresh.png"></span>
          <span class="coin_icon_value"><img src="stc_src/bitcoin.png" class="coin_icon"></span><span style="color: #FEAF17; font-weight: 700;">0.01255377</span> 
          <span class="coin_icon_value"><img src="stc_src/ethereum.png" class="coin_icon"></span><span style="color: #3F89B3; font-weight: 700;">0.61341694</span>
          <span style="width: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-         <button id="button_filter">Filter<img style="width: 11px; padding-right: 4px; padding-left: 20px;" src="stc_src/arrow-down.png"></button></p>
+         <span class="button_filter">&nbsp;&nbsp;&nbsp;Filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 11px; padding-right: 4px; padding-left: 20px;" src="stc_src/arrow-down_black.png"></span></p>
     </div>
     <table  cellpadding = "12px", cellspacing="0px">
       <tbody>
         <tr class="table_header" style="vertical-align: top;""">
           <td >BOT ID </td>
-          <td class="gesamtinvest">TOTAL INVESTMENT
-            <img style="width: 12px;"" src="stc_src/arrow-down.png"> <img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
-          <td>PROFIT </td>
-          <td class="period_operation">PERIOD OF BOT OPERATION 
-            <img style="width: 12px;"" src="stc_src/arrow-down.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
+          <td class="gesamtinvest">TOTAL INVESTMENT<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
+          <td>PROFIT<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
+          <td class="period_operation">PERIOD OF BOT OPERATION<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
 
           <td> </td>
         </tr>
@@ -227,7 +226,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
 + 1 - 2 "Ertragsbots"
 -->
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">ETHl</span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">ETHl <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"> </span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -244,7 +243,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
         </tr>
 
         <tr class="uneven">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Btc_1</span><br>
+           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Btc_1 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -259,7 +258,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
           <span class="button button_grey">Finalize</span>
         </tr>
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bit_2</span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bit_2 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -276,7 +275,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
         </tr>
 
         <tr class="uneven">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bit_4</span><br>
+           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bit_4 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -291,7 +290,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
           <span class="button button_grey">Finalize</span>
         </tr>
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bitxl</span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bitxl <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -308,7 +307,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
         </tr>
 
         <tr class="uneven">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">eth_22</span><br>
+           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">eth22 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -323,7 +322,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
           <span class="button button_grey">Finalize</span>
         </tr>
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">95482</span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">91481 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -343,7 +342,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
 
 
         <tr class="uneven">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">bitg</span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">bitg <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -360,7 +359,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
         </tr>
 
         <tr class="even">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">eth+</span><br>
+           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">eth+ <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
@@ -376,7 +375,7 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
         </tr>
 
         <tr class="uneven">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">b_+</span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">b_+ <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
             <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
             <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
