@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: "Montserrat", sans-serif;
+    }
+    .text_green{
+      color: green;
+    }
+    .text_black{
+      color: black;
+    }
+    .text_nav_inactive{
+
+    }
+    .text_bot_name{
+      color: #190291;
+      font-weight: 700;
+    }
+    .text_bot_strategy{
+      color: #96989D;
+    }
+    .text_bot_strategy_type{
+      color: black;
+    }
+    tr{
+      text-align: center;
+    }
+    .even{ 
+      background-color: #FBFAFF; 
+    }
+    .uneven{ 
+      background-color: #FFFFFF; 
+    }
+    button{
+      display: inline-block;
+      background-color: #2DCA72;
+      height: 50px;
+      border-radius: 6px;
+      border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+    }
+    button.grey{
+      background-color: #DFDFDF;
+      color: #96989D;
+    }
+    #button_show_USD{
+      display: inline-block;
+      background-color: white;
+      height: 35px;
+      border-radius: 26px;
+      border: solid black 1px;
+  color: #190291;
+  padding: 5px 10px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+    }
+    #button_filter{
+      display: inline-block;
+      background-color: white;
+      height: 35px;
+      border-radius: 26px;
+      border: solid black 1px;
+  color: #190291;
+  padding: 5px 10px 5px 40px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+    }
+    .coin_icon{
+      max-width: 16px;
+      padding-top: 4px;
+    }
+    .coin_icon_value{
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 35px;
+      padding: 5px 5px;
+    }
+    .gesamtinvest{
+      padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+    }
+    .period_operation{
+      padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav" align="left" style="max-width: 250px">
+    <nav>
+      <ul>
+        <li id="logo"></li>
+        <li>Rottstegge</li>
+        <li>Dashboard</li>
+        <li>Finances</li>
+        <li>Trading Tool BOT</li>
+        <li>DeFi Investments</li>
+        <li>Transactions</li>
+        <li>Affiliate</li>
+        <li>Vouchers</li>
+        <li>Account Settings</li>
+        <hr>
+        <li>NOW</li>
+        <li>SmartTube</li>
+        <li>Telegram</li>
+        <li>Software</li>
+        <li>News</li>
+        <li>FAQ</li>
+        <li>Logout</li>
+      </ul>
+    </nav>
+    
+<!--
+Einzahlung	0.02367923	BTC					SmartTradeCoin (STC)	STC	Scam	23.04.2021 14:08:05
+Einzahlung	0.07226800	BTC					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen möglich / Login nicht möglich / Auszahlung Mitte Juni beantragt	10.05.2021 08:20:16
+Einzahlung	0.47051514	ETH					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen möglich / Login nicht möglich / Auszahlung Mitte Juni beantragt	10.05.2021 08:21:37
+Einzahlung	0.12466101	ETH					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen möglich / Login nicht möglich / Auszahlung Mitte Juni beantragt	12.05.2021 09:07:50
+Einzahlung	0.40119000	ETH					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen möglich / Login nicht möglich / Auszahlung Mitte Juni beantragt	12.05.2021 09:30:34
+Einzahlung	0.03405481	BTC					SmartTradeCoin (STC)	STC	STC scam	13.05.2021 14:38:39
+Einzahlung	0.12056706	BTC					SmartTradeCoin (STC)	STC	STC scam	04.06.2021 12:06:22
+Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:12:20
++ 1 - 2 "Ertragsbots"
+-->
+
+
+  </div>
+  <div align="">
+    <div>
+      <p>LIST OF TRADING TOOL BOT</p>
+      <p>Amount of the earnings: <button id="button_show_USD">Show in USD</button>
+         <span class="coin_icon_value"><img src="stc_src/bitcoin.png" class="coin_icon"></span><span style="color: #FEAF17; font-weight: 700;">0.00000000</span> 
+         <span class="coin_icon_value"><img src="stc_src/ethereum.png" class="coin_icon"></span><span style="color: #3F89B3; font-weight: 700;">0.00000000</span>
+         <span style="width: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+         <button id="button_filter">Filter<img style="max-width: 15px; padding-right: 4px; padding-left: 20px;" src="stc_src/arrow-down.png"></button></p>
+    </div>
+    <table  cellpadding = "0", cellspacing="0">
+      <tbody>
+        <tr class="table_header even">
+          <td>BOT ID </td>
+          <td class="gesamtinvest">TOTAL INVESTMENT<br>
+            <span style="font-size: 42px">&#710;</span> <img src="stc_src/arrow-down.png"></td>
+          <td>PROFIT </td>
+          <td class="period_operation">PERIOD OF BOT OPERATION </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr class="even">
+          <td><span class="text_bot_name">BTC_1</span><br>
+            <span class="text_bot_strategy">Strategy:</span><br>
+            <span class="text_bot_strategy_type">normal</span> </td>
+          <td class="text_black">0.04500000 BTC </td>
+          <td class="text_green">0.00256788 BTC (xx.yy%) </td>
+          <td>15 day(s) 23:44:04 </td>
+          <td><button class="grey">Withdrawal of the profit only</button></td>
+          <td><button>Buy Again</button></td>
+          <td><button class="grey">Finalize</button></td>
+        </tr>
+        <tr class="uneven">
+          <td><span class="text_bot_name">BTC_2</span><br>
+            <span class="text_bot_strategy">Strategy:</span><br>
+            <span class="text_bot_strategy_type">normal</span>  </td>
+            <td class="text_black">0.02367923 BTC </td>
+            <td class="text_green">0.00256788 BTC (xx.yy%) </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <p><button>Back</button><button>1</button><button>Next</button></p>
+  </div>
+</body>
+</html>
