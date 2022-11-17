@@ -22,17 +22,44 @@
         
         font-weight: 700;
       }
+      .button_below {
+        background-color: #DFDFDF;
+        border-radius: 6px;
+      border: none;
+        color: #96989D;
+        padding: 12px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+      
+        min-width: 80px;
+        
+        font-weight: 700;
+      }
       .button_show {
         height: 40px;
       border-radius: 22px;
       border: solid #190291 2px;
   color: #190291;
-  padding: 9px 14px;
+  padding: 7px 14px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   margin: 6px 2px;
+      }
+      .button_number{
+        
+      border-radius: 6px;
+      border: solid #5f9dea 2.3px;
+  color: #5f9dea;
+  padding: 10px 14px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0px 0.5px 0px 0.5px;
       }
     body{
       font-family: "Montserrat", sans-serif;
@@ -69,6 +96,7 @@ font-weight:bold;
     }
     .uneven{ 
       background-color: #FFFFFF; 
+
     }
     .table_header{
       color:#96989D;
@@ -92,6 +120,14 @@ font-weight:bold;
       color: #96989D;
 
     }
+    .button_blue{
+      background-color: #190491;
+      color: white;
+
+    }
+
+    
+
     .button_filter {
         height: 40px;
         min-width: 220px;
@@ -160,6 +196,22 @@ li {
   color: white;
   list-style-type: none;
 }
+.button_payin {
+  background-color: #2DCA72;
+        height: 40px;
+        min-width: 100px;
+      border-radius: 22px;
+      
+  color: white;
+  font-weight: 600;
+  padding: 9px 90px 9px 80px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 6px 2px 6px -40px;
+ 
+      }
   </style>
 </head>
 <body>
@@ -167,11 +219,19 @@ li {
   <div id="nav" align="left" style="max-width: 250px margin: 0px; padding: 0px;">
     <nav>
       <ul>
-        <li id="logo"><img src="stc_src/stc-go-logo-auf-blau.png" width="228px" style="margin-left: -58px;"></li>
-        <li>Rottstegge</li>
+        <li id="logo"><img src="stc_src/toggle.png" width="250px" style="margin-left: -50px; margin-top: -10px;"></li>
+        <li>live<label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>demo</li>
+        <li><img src="stc_src/head.png" style="width: 38px;">Rottstegge</li>
+        <li><span class="button_payin">Payin</span></li>
         <li>Dashboard</li>
         <li>Finances</li>
         <li>Trading Tool BOT</li>
+        <li>Panel</li>
+        <li>List of BOT</li>
+        <li>History</li>
         <li>DeFi Investments</li>
         <li>Transactions</li>
         <li>Affiliate</li>
@@ -185,6 +245,11 @@ li {
         <li>News</li>
         <li>FAQ</li>
         <li>Logout</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
       </ul>
     </nav>
     
@@ -194,12 +259,13 @@ li {
   </div>
   <div style="padding-left: 28px; margin: 0px; padding-top: 0px;">
     <div>
-      <p  style="margin: 0px;  font-size: 18px;     text-shadow: 0.2px 0;
+      <br>
+      <p  style="margin: 0px; margin-left: -10px; padding: 0px; font-size: 18px;     text-shadow: 0.2px 0;
       letter-spacing:0.2px; padding-top: 25px;
       font-weight:bold;"><strong>LIST OF TRADING TOOL BOT</strong></p>
-      <p style="margin: 0px; font-weight: 500;">Amount of the earnings: &nbsp; <span class="button_show">Show in USD&nbsp;<img style="width:19px;"src="stc_src/refresh.png"></span>
-         <span class="coin_icon_value"><img src="stc_src/bitcoin.png" class="coin_icon"></span><span style="color: #FEAF17; font-weight: 700;">0.01255377</span> 
-         <span class="coin_icon_value"><img src="stc_src/ethereum.png" class="coin_icon"></span><span style="color: #3F89B3; font-weight: 700;">0.61341694</span>
+      <p style="margin: 0px; margin-left: -10px; font-weight: 500;">Amount of the earnings: &nbsp; <span class="button_show">Show in USD&nbsp;<img style="width:19px;"src="stc_src/refresh.png"></span>
+         <span class="coin_icon_value"><img src="stc_src/bitcoin.png" class="coin_icon"></span><span style="color: #f7931b; font-weight: 700;">0.03314646</span> 
+         <span class="coin_icon_value"><img src="stc_src/ethereum.png" class="coin_icon"></span><span style="color: #3F89B3; font-weight: 700;">0.11611821</span>
          <span style="width: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
          <span class="button_filter">&nbsp;&nbsp;&nbsp;Filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 11px; padding-right: 4px; padding-left: 20px;" src="stc_src/arrow-down_black.png"></span></p>
     </div>
@@ -220,85 +286,150 @@ Einzahlung	0.07226800	BTC					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen
 Einzahlung	0.47051514	ETH					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen möglich / Login nicht möglich / Auszahlung Mitte Juni beantragt	10.05.2021 08:21:37
 Einzahlung	0.12466101	ETH					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen möglich / Login nicht möglich / Auszahlung Mitte Juni beantragt	12.05.2021 09:07:50
 Einzahlung	0.40119000	ETH					SmartTradeCoin (STC)	STC	Scam - keine Auszahlungen möglich / Login nicht möglich / Auszahlung Mitte Juni beantragt	12.05.2021 09:30:34
-Einzahlung	0.03405481	BTC					SmartTradeCoin (STC)	STC	STC scam	13.05.2021 14:38:39
-Einzahlung	0.12056706	BTC					SmartTradeCoin (STC)	STC	STC scam	04.06.2021 12:06:22
+Einzahlung	0.03405481	BTC					SmartTradeCoin (STC)	STC	STC scam	                                                                                13.05.2021 14:38:39
+Einzahlung	0.12056706	BTC					SmartTradeCoin (STC)	STC	STC scam	                                                                                04.06.2021 12:06:22
 Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:12:20
 + 1 - 2 "Ertragsbots"
 -->
-        <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">ETHl <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"> </span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.47251820<br>ETH </td>
-          <td class="text_green">0.05575715<br> ETH (11.80%) </td>
-          <td>27 day(s) 06:58:27 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-          </td>
-        </tr>
+       
+       
 
-        <tr class="uneven">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Btc_1 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.04500000<br>BTC </td>
-          <td class="text_green">0.00130951<br>BTC (2.91%) </td>
-          <td>7 day(s) 05:42:04 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-        </tr>
+ 
+   <tr class="even">
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Bit <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+      <br>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+       
+    </td>
+    <td class="text_black">0.12056706<br>BTC </td>
+    <td class="text_green">0.00177234<br>BTC (1.47%) </td>
+    <td>4 day(s) 06:12:52 </td>
+    <td>
+      <span class="button button_grey">Withdrawal of the profit only</span>
+    <span class="button">Buy Again</span>
+    <span class="button button_grey">Finalize</span>
+    </td>
+  </tr>
+  <tr class="uneven">
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">b2_re <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+      <br>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+       
+    </td>
+    <td class="text_black">0.02655389<br>BTC </td>
+    <td class="text_green">0.00130645<br> BTC (4.92%) </td>
+    <td>16 day(s) 03:07:26 </td>
+    <td>
+      <span class="button button_grey">Withdrawal of the profit only</span>
+    <span class="button">Buy Again</span>
+    <span class="button button_grey">Finalize</span>
+    </td>
+  </tr>
+  <tr class="even">
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Btc5 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+     <br>
+     <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+     <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+      
+   </td>
+   <td class="text_black">0.03405481<br>BTC </td>
+   <td class="text_green">0.00366430<br>BTC (10.76%) </td>
+   <td>26 day(s) 05:01:14 </td>
+   <td>
+     <span class="button button_grey">Withdrawal of the profit only</span>
+   <span class="button">Buy Again</span>
+   <span class="button button_grey">Finalize</span>
+ </tr>
+  <tr class="uneven">
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">eth2 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+     <br>
+     <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+     <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+      
+   </td>
+   <td class="text_black">0.52585101<br>ETH </td>
+   <td class="text_green">0.06031511<br> ETH (11.47%) </td>
+   <td>27 day(s) 08:49:32 </td>
+   <td>
+     <span class="button button_grey">Withdrawal of the profit only</span>
+   <span class="button">Buy Again</span>
+   <span class="button button_grey">Finalize</span>
+ </tr>
+  <tr class="even">
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">ETHl <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"> </span><br>
+      <br>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+       
+    </td>
+    <td class="text_black">0.47051514<br>ETH </td>
+    <td class="text_green">0.05580310<br>ETH (11.82%) </td>
+    <td>29 day(s) 10:34:27 </td>
+    <td>
+      <span class="button button_grey">Withdrawal of the profit only</span>
+    <span class="button">Buy Again</span>
+    <span class="button button_grey">Finalize</span>
+    </td>
+  </tr>
+  <tr class="uneven">
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">btc4 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+      <br>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+       
+    </td>
+    <td class="text_black">0.07226800<br>BTC </td>
+    <td class="text_green">0.00915636<br> BTC (12.67%) </td>
+    <td>29 day(s) 10:48:53 </td>
+    <td>
+      <span class="button button_grey">Withdrawal of the profit only</span>
+    <span class="button">Buy Again</span>
+    <span class="button button_grey">Finalize</span>
+    </td>
+  </tr>
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bit_2 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">New<img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
+            <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
              
           </td>
           <td class="text_black">0.02367923<br>BTC </td>
-          <td class="text_green">0.00091875<br>BTC (3.87%) </td>
-          <td>12 day(s) 06:12:52 </td>
+          <td class="text_green">0.00395917<br>BTC (16.72%) </td>
+          <td>46 day(s) 04:17:38 </td>
           <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
+            <span class="button button_blue">Withdrawal of the profit only</span>
           <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
+          <span class="button button_blue">Finalize</span>
           </td>
         </tr>
-
         <tr class="uneven">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bit_4 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.03451200<br>BTC </td>
-          <td class="text_green">0.00120792<br>BTC (3.50%) </td>
-          <td>13 day(s) 08:31:15 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-        </tr>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Btc_1 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+           <br>
+           <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+           <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+            
+         </td>
+         <td class="text_black">0.04760960<br>BTC </td>
+         <td class="text_green">0.01328784<br>BTC (27.91%) </td>
+         <td>76 day(s) 01:42:04 </td>
+         <td>
+           <span class="button button_blue">Withdrawal of the profit only</span>
+         <span class="button">Buy Again</span>
+         <span class="button button_blue">Finalize</span>
+       </tr>
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">Bitxl <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Bot <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
+            <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
+            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
              
           </td>
-          <td class="text_black">0.12567214<br>BTC </td>
-          <td class="text_green">0.00216156<br>BTC (1.72%) </td>
-          <td>4 day(s) 09:16:38 </td>
+          <td class="text_black">0.04300000<br>BTC </td>
+          <td class="text_green">0.00460960<br>BTC (10.72%) </td>
+          <td>Completed<br>2021-03-24 </td>
           <td>
             <span class="button button_grey">Withdrawal of the profit only</span>
           <span class="button">Buy Again</span>
@@ -306,93 +437,10 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
           </td>
         </tr>
 
-        <tr class="uneven">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">eth22 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.53674522<br>ETH </td>
-          <td class="text_green">0.05023935<br> ETH (9.36%) </td>
-          <td>24 day(s) 11:18:37 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-        </tr>
-        <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">91481 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.07500000<br>BTC </td>
-          <td class="text_green">0.00361500<br> BTC (4.82%) </td>
-          <td>14 day(s) 05:57:08 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-          </td>
-        </tr>
 
-       
-
-
-        <tr class="uneven">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">bitg <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.00962487<br>BTC </td>
-          <td class="text_green">0.00032917<br> BTC (3.42%) </td>
-          <td>9 day(s) 09:07:26 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-          </td>
-        </tr>
-
-        <tr class="even">
-           <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">eth+ <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.11348350<br>ETH </td>
-          <td class="text_green">0.00560609<br> ETH (4.94%) </td>
-          <td>16 day(s) 10:24:20 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-        </tr>
-
-        <tr class="uneven">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 8px;">b_+ <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
-            <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 8px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 8px;">normal</span>
-             
-          </td>
-          <td class="text_black">0.02454650<br>BTC </td>
-          <td class="text_green">0.00301186<br> BTC (12.27%) </td>
-          <td>25 day(s) 04:18:53 </td>
-          <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
-          </td>
-        </tr>
       </tbody>
     </table>
-    <p><button>Back</button><button>1</button><button>Next</button></p>
+    <p style="margin: 0px; margin-left: -10px; padding: 0px;"> <span class="button_below">Back</span> <span class="button_number" style="margin-bottom: -2px;">1</span> <span class="button_below">Next</span>&nbsp;<span class="button_below">Export to CSV</span></p>
   </div>
 
 </div>
