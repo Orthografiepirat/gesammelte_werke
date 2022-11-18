@@ -12,13 +12,14 @@
         border-radius: 6px;
       border: none;
         color: white;
-        padding: 20px 20px;
+        padding: 22px 4px 6px 4px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 6px;
-        min-width: 230px;
+        margin: 2px 6px;
+        min-width: 150px;
+        height: 38px;
         
         font-weight: 700;
       }
@@ -27,7 +28,7 @@
         border-radius: 6px;
       border: none;
         color: #96989D;
-        padding: 12px 5px;
+        padding: 12px 12px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -38,16 +39,16 @@
         font-weight: 700;
       }
       .button_show {
-        height: 40px;
-      border-radius: 22px;
+        height: 30px;
+      border-radius: 20px;
       border: solid #190291 2px;
   color: #190291;
-  padding: 7px 14px;
+  padding: 5px 12px;
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  font-size: 18px;
-  margin: 6px 2px;
+  font-size: 16px;
+  margin: 0px 0px;
       }
       .button_number{
         
@@ -65,6 +66,8 @@
       font-family: "Montserrat", sans-serif;
       font-size: 16px;
       font-weight: 700;
+      margin: 0px;
+      padding: 0px;
     }
     .text_green{
       color: rgb(52,158,108);
@@ -119,6 +122,18 @@ font-weight:bold;
       background-color: #DFDFDF;
       color: #96989D;
 
+    }
+
+    .button_2lines{
+      display: inline-block;
+      background-color: #DFDFDF;
+      height: 38px;
+      border-radius: 6px;
+      border: none;
+  color: #96989D;
+  padding: 12px 26px 14px 26px;
+  text-align: center;
+  vertical-align: middle;
     }
     .button_blue{
       background-color: #190491;
@@ -187,12 +202,12 @@ font-weight:bold;
 }
 ul {
   background-color: #190291;
-  width: 190px;
-  padding-right: 20px;
+  width: 248px;
+  padding-right: 0px;
 
 }
 li {
-  padding: 15px 10px;
+  padding: 15px 0px 15px 20px;
   color: white;
   list-style-type: none;
 }
@@ -215,67 +230,72 @@ li {
   </style>
 </head>
 <body>
+  <!-- go.smarttradecoin.com/app/panel_details.php?data=trading_list -->
   <div class="flex-container" style="margin: 0px; padding: 0px;">
-  <div id="nav" align="left" style="max-width: 250px margin: 0px; padding: 0px;">
-    <nav>
+  <div id="nav" align="left" style="max-width: 350px; margin-top: -16px; padding: 0px;">
+    
       <ul>
-        <li id="logo"><img src="stc_src/toggle.png" width="250px" style="margin-left: -50px; margin-top: -10px;"></li>
-        <li>live<label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider round"></span>
-        </label>demo</li>
-        <li><img src="stc_src/head.png" style="width: 38px;">Rottstegge</li>
-        <li><span class="button_payin">Payin</span></li>
-        <li>Dashboard</li>
-        <li>Finances</li>
-        <li>Trading Tool BOT</li>
-        <li>Panel</li>
-        <li>List of BOT</li>
-        <li>History</li>
-        <li>DeFi Investments</li>
-        <li>Transactions</li>
-        <li>Affiliate</li>
-        <li>Vouchers</li>
-        <li>Account Settings</li>
-        <hr>
-        <li>NOW</li>
-        <li>SmartTube</li>
-        <li>Telegram</li>
-        <li>Software</li>
-        <li>News</li>
-        <li>FAQ</li>
-        <li>Logout</li>
+        <li id="logo"><img src="stc_src/stc-go-logo-auf-blau.png" width="245px" style="margin-left: -50px; margin-top: 10px;"></li>
+        <li><img src="stc_src/ovedemo.PNG" width="210px" style="margin-left: -33px; margin-top: -28px;"></li>
+        <li><span style="vertical-align:middle; display: inline-block; margin-top: -20px;"><button style="background-color: white; color: black; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; margin-left: -28px; padding: 1px 0px; width: 220px; height: 380px;border-radius: 3px;"><span style="margin-left: -46px;">Einzahlung</span></button></span></li>
+        <li style="vertical-align: middle;"><img src="stc_src/head.png" width="42px" style="margin-left: -45px; margin-top: -30px;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Rottstegge<img src="stc_src/arrowmenu.PNG" width="21px" style="margin-left: 92px; margin-right: -22px; "></span></li>
+
+       
+        <li style="color: #e2dfff;"><span style="margin-left: 0px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Dashboard</span></li>
+        <li style="vertical-align: middle;"><img src="stc_src/head.png" width="42px" style="margin-left: -45px; margin-top: -30px;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Finanzen<img src="stc_src/arrowmenu.PNG" width="21px" style="margin-left: 107px; margin-right: -22px; "></span></li>
+        <li style="color: #e2dfff; background-color: #17037e;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #69aefc;">BOT-Handelstools</span></li>
+        <li style="color: #e2dfff; background-color: #17037e;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">BOT-Panel</span></li>
+        <li style="color: #e2dfff; background-color: #17037e;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #69aefc;">Bot Liste</span></li>
+        <li style="color: #e2dfff; background-color: #17037e;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Verlauf</span></li>
+
+        <li style="color: #e2dfff; background-color: #ffac26;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: black; ">DeFi-Investitionen</span></li>
+        
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Transaktionen</span></li>
+        <li style="vertical-align: middle;"><img src="stc_src/head.png" width="42px" style="margin-left: -45px; margin-top: -30px;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Affiliate<img src="stc_src/arrowmenu.PNG" width="21px" style="margin-left: 107px; margin-right: -22px; "></span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Gutscheine</span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Einstellungen</span></li>
+
+        <hr style="width: 245px; margin-top: -15px; margin-left: -22px; height: 3px; border: none; background-color: #341cac;">
+
+        <!--<li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -15px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Wettbewerb!<img src="stc_src/newbadge.PNG" style=""></span></li>-->
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">NOW</span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">SmartTube</span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Telegram</span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Software</span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">News</span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">FAQ</span></li>
+        <li style="color: #e2dfff;"><span style="margin-left: 2px; margin-top: -20px; padding: 0px 0px 10px 12px; vertical-align:middle; display: inline-block; color: #e2dfff;">Ausloggen</span></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
         
       </ul>
-    </nav>
+  
     
 
 
 
   </div>
-  <div style="padding-left: 28px; margin: 0px; padding-top: 0px;">
+  <div style="padding-left: 22px; margin: -14px 0px 0px 0px; padding-top: 0px;">
     <div>
       <br>
-      <p  style="margin: 0px; margin-left: -10px; padding: 0px; font-size: 18px;     text-shadow: 0.2px 0;
-      letter-spacing:0.2px; padding-top: 25px;
-      font-weight:bold;"><strong>LIST OF TRADING TOOL BOT</strong></p>
-      <p style="margin: 0px; margin-left: -10px; font-weight: 500;">Amount of the earnings: &nbsp; <span class="button_show">Show in USD&nbsp;<img style="width:19px;"src="stc_src/refresh.png"></span>
-         <span class="coin_icon_value"><img src="stc_src/bitcoin.png" class="coin_icon"></span><span style="color: #f7931b; font-weight: 700;">0.03314646</span> 
+      <p  style="margin: 0px; margin-left: -2px; padding: 0px; font-size: 18px;     text-shadow: 0.2px 0;
+      letter-spacing:0.2px; padding-top: 22px;
+      font-weight:bold;"><strong>BOT LISTE-HANDELSTOOLS</strong></p>
+      <p style="margin: -5px 0px 0px -2px; font-weight: 500;"><span style="padding-right: 6px">Gesamteinkommen:</span>  <span class="button_show">Sehe in USD&nbsp;<img style="width:19px;"src="stc_src/refresh.png"></span>&nbsp;
+         <span class="coin_icon_value"><img src="stc_src/bitcoin.png" class="coin_icon"></span><span style="color: #f7931b; font-weight: 700;">0.03314646</span> &nbsp;
          <span class="coin_icon_value"><img src="stc_src/ethereum.png" class="coin_icon"></span><span style="color: #3F89B3; font-weight: 700;">0.11611821</span>
-         <span style="width: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+         <span style="width: 200px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
          <span class="button_filter">&nbsp;&nbsp;&nbsp;Filter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="width: 11px; padding-right: 4px; padding-left: 20px;" src="stc_src/arrow-down_black.png"></span></p>
     </div>
-    <table  cellpadding = "12px", cellspacing="0px">
+    <table  cellpadding = "12px 14px 8px 14px" cellspacing="-2px 0px">
       <tbody>
-        <tr class="table_header" style="vertical-align: top;""">
-          <td >BOT ID </td>
-          <td class="gesamtinvest">TOTAL INVESTMENT<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
-          <td>PROFIT<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
-          <td class="period_operation">PERIOD OF BOT OPERATION<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
+        <tr class="table_header" style="vertical-align: top;" cellpadding = "0px 0px 0px 0px">
+          <td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOT ID </td>
+          <td class="gesamtinvest">GESAMTINVESTITIONEN<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
+          <td>GEWINN<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
+          <td class="period_operation">&nbsp;&nbsp;ZEITRAUM DER <br>ARBEIT DES BOTS<img style="width: 12px;"" src="stc_src/arrow-up.png"><img style="width: 12px;"" src="stc_src/arrow-down.png"></td>
 
           <td> </td>
         </tr>
@@ -296,151 +316,151 @@ Einzahlung	0.04500000	BTC					SmartTradeCoin	STC	STC oder Getnode	22.02.2021 11:
 
  
    <tr class="even">
-    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Bit <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bit <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
       <br>
-      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
        
     </td>
     <td class="text_black">0.12056706<br>BTC </td>
     <td class="text_green">0.00177234<br>BTC (1.47%) </td>
     <td>4 day(s) 06:12:52 </td>
     <td>
-      <span class="button button_grey">Withdrawal of the profit only</span>
-    <span class="button">Buy Again</span>
-    <span class="button button_grey">Finalize</span>
+      <span class="button_2lines">Nur Gewinne<br> auszahlen</span>
+      <span class="button">Erneut kaufen</span>
+    <span class="button button_grey">Finalisieren</span>
     </td>
   </tr>
   <tr class="uneven">
-    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">b2_re <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b2_re <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
       <br>
-      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
        
     </td>
     <td class="text_black">0.02655389<br>BTC </td>
     <td class="text_green">0.00130645<br> BTC (4.92%) </td>
     <td>16 day(s) 03:07:26 </td>
     <td>
-      <span class="button button_grey">Withdrawal of the profit only</span>
-    <span class="button">Buy Again</span>
-    <span class="button button_grey">Finalize</span>
+      <span class="button_2lines">Nur Gewinne<br> auszahlen</span>
+      <span class="button">Erneut kaufen</span>
+    <span class="button button_grey">Finalisieren</span>
     </td>
   </tr>
   <tr class="even">
-    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Btc5 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Btc5 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
      <br>
-     <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-     <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+     <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+     <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
       
    </td>
    <td class="text_black">0.03405481<br>BTC </td>
    <td class="text_green">0.00366430<br>BTC (10.76%) </td>
    <td>26 day(s) 05:01:14 </td>
    <td>
-     <span class="button button_grey">Withdrawal of the profit only</span>
-   <span class="button">Buy Again</span>
-   <span class="button button_grey">Finalize</span>
+    <span class="button_2lines">Nur Gewinne<br> auszahlen</span>
+    <span class="button">Erneut kaufen</span>
+   <span class="button button_grey">Finalisieren</span>
  </tr>
   <tr class="uneven">
-    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">eth2 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eth2 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
      <br>
-     <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-     <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+     <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+     <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
       
    </td>
    <td class="text_black">0.52585101<br>ETH </td>
    <td class="text_green">0.06031511<br> ETH (11.47%) </td>
    <td>27 day(s) 08:49:32 </td>
    <td>
-     <span class="button button_grey">Withdrawal of the profit only</span>
-   <span class="button">Buy Again</span>
-   <span class="button button_grey">Finalize</span>
+    <span class="button_2lines">Nur Gewinne<br> auszahlen</span>
+    <span class="button">Erneut kaufen</span>
+   <span class="button button_grey">Finalisieren</span>
  </tr>
   <tr class="even">
-    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">ETHl <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"> </span><br>
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETHl <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"> </span><br>
       <br>
-      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
        
     </td>
     <td class="text_black">0.47051514<br>ETH </td>
     <td class="text_green">0.05580310<br>ETH (11.82%) </td>
     <td>29 day(s) 10:34:27 </td>
     <td>
-      <span class="button button_grey">Withdrawal of the profit only</span>
-    <span class="button">Buy Again</span>
-    <span class="button button_grey">Finalize</span>
+      <span class="button_2lines">Nur Gewinne<br> auszahlen</span>
+      <span class="button">Erneut kaufen</span>
+    <span class="button button_grey">Finalisieren</span>
     </td>
   </tr>
   <tr class="uneven">
-    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">btc4 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+    <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;btc4 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
       <br>
-      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+      <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+      <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
        
     </td>
     <td class="text_black">0.07226800<br>BTC </td>
     <td class="text_green">0.00915636<br> BTC (12.67%) </td>
     <td>29 day(s) 10:48:53 </td>
     <td>
-      <span class="button button_grey">Withdrawal of the profit only</span>
-    <span class="button">Buy Again</span>
-    <span class="button button_grey">Finalize</span>
+      <span class="button_2lines">Nur Gewinne<br> auszahlen</span>
+      <span class="button">Erneut kaufen</span>
+    <span class="button button_grey">Finalisieren</span>
     </td>
   </tr>
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">New<img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New<img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+            <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
              
           </td>
           <td class="text_black">0.02367923<br>BTC </td>
           <td class="text_green">0.00395917<br>BTC (16.72%) </td>
           <td>46 day(s) 04:17:38 </td>
           <td>
-            <span class="button button_blue">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_blue">Finalize</span>
+            <span class="button_2lines button_blue">Nur Gewinne<br> auszahlen</span>
+            <span class="button">Erneut kaufen</span>
+          <span class="button button_blue">Finalisieren</span>
           </td>
         </tr>
         <tr class="uneven">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Btc_1 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Btc_1 <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
            <br>
-           <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-           <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+           <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+           <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
             
          </td>
          <td class="text_black">0.04760960<br>BTC </td>
          <td class="text_green">0.01328784<br>BTC (27.91%) </td>
          <td>76 day(s) 01:42:04 </td>
          <td>
-           <span class="button button_blue">Withdrawal of the profit only</span>
-         <span class="button">Buy Again</span>
-         <span class="button button_blue">Finalize</span>
+          <span class="button_2lines button_blue">Nur Gewinne<br> auszahlen</span>
+         <span class="button">Erneut kaufen</span>
+         <span class="button button_blue">Finalisieren</span>
        </tr>
         <tr class="even">
-          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">Bot <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
+          <td style="text-align: left;"><span class="text_bot_name" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bot <img style="width: 23px; margin-bottom: -2px; margin-left: -1px;" src="stc_src/edit.png"></span><br>
             <br>
-            <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">Strategy:</span><br>
-            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">normal</span>
+            <span class="text_bot_strategy"  style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strategie:</span><br>
+            <span class="text_bot_strategy_type" style="text-align: left; padding-left: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;normal</span>
              
           </td>
           <td class="text_black">0.04300000<br>BTC </td>
           <td class="text_green">0.00460960<br>BTC (10.72%) </td>
           <td>Completed<br>2021-03-24 </td>
           <td>
-            <span class="button button_grey">Withdrawal of the profit only</span>
-          <span class="button">Buy Again</span>
-          <span class="button button_grey">Finalize</span>
+            <span class="button_2lines">Nur Gewinne<br> auszahlen</span>
+            <span class="button">Erneut kaufen</span>
+          <span class="button button_grey">Finalisieren</span>
           </td>
         </tr>
 
 
       </tbody>
     </table>
-    <p style="margin: 0px; margin-left: -10px; padding: 0px;"> <span class="button_below">Back</span> <span class="button_number" style="margin-bottom: -2px;">1</span> <span class="button_below">Next</span>&nbsp;<span class="button_below">Export to CSV</span></p>
+    <p style="margin: 0px; margin-left: -12px; padding: 0px;">&nbsp;&nbsp; <span class="button_below">Zurück</span> <span class="button_number" style="margin-bottom: -2px;">1</span> <span class="button_below button_blue">Weiter</span>&nbsp;<span class="button_below button_blue">Export nach CSV</span></p>
   </div>
 
 </div>
